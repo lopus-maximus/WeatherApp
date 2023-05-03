@@ -1,0 +1,53 @@
+{coord: {lon: 77.2167, lat: 28.6667},…}
+base
+: 
+"stations"
+clouds
+: 
+{all: 75}
+cod
+: 
+200
+coord
+: 
+{lon: 77.2167, lat: 28.6667}
+dt
+: 
+1683100824
+id
+: 
+1273294
+main
+: 
+{temp: 84.29, feels_like: 87.46, temp_min: 84.29, temp_max: 84.29, pressure: 1011, humidity: 58}
+name
+: 
+"Delhi"
+sys
+: 
+{type: 1, id: 9165, country: "IN", sunrise: 1683072545, sunset: 1683120415}
+timezone
+: 
+19800
+visibility
+: 
+3000
+weather
+: 
+[{id: 721, main: "Haze", description: "haze", icon: "50d"}]
+wind
+: 
+{speed: 5.75, deg: 360}
+<div class="pressure">dfefs</div>
+<div class="humidity">fe</div>
+<div class="description">sdfhi</div>
+<div class="wind">hshkj</div>
+<div class="degree">gj</div>
+const url = 'https://open-weather13.p.rapidapi.com/city/Delhi';
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '68d4407546mshf8dd1c6cf5df644p1e860ejsn136ad79e8c88',
+		'X-RapidAPI-Host': 'open-weather13.p.rapidapi.com'
+	}
+};
