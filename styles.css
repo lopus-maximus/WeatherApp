@@ -9,27 +9,27 @@
   }
   
   .main_container{
+    padding-top: 20px;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQed_X8nNKDtK_KAHIEFoGuBi2CZfe_3nrMnhugeiHrsA&usqp=CAU&ec=48665701");
     background-repeat: no-repeat;
     background-size: cover;
+    justify-content: center;
+    align-items: center;
   }
   .container2{
     display:flex;
-    justify-content: center;
-    align-items: center;
-    height:75vh;
-    margin:0;
+    justify-content: space-around;
+    margin-bottom:50px;
     font-size:120%;
     font-family: 'Open Sans', sans-serif;
   }
+
   .card1{
-    margin: 1 em;
+    margin: 1em;
     background: #000000d0;
     color:white;
     padding:2em;
     border-radius: 30px;
-    width: 100%;
-    max-width: 420px;
   }
 
   .grid{
@@ -43,3 +43,4 @@
     width:100%;
     border-radius: 0%;
   }
+  

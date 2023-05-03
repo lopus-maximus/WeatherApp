@@ -23,17 +23,17 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">About</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
+                  Features
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">My Location</a></li>
+                  <li><a class="dropdown-item" href="#">Alerts!</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">Top Stories</a></li>
                 </ul>
               </li>
             </ul>
@@ -45,44 +45,66 @@
         </div>
       </nav>
       <div class="main_container">
+        <h2 class="text-center">Weather in <span class="city" id="city"></span></h2>
+        <hr>
       <div class="container2">
       <div class="card1">
-        <h2>Weather in <span class="city" id="city"></span></h2>
+        <h2 class="text-center">Temperature</h2>
+        <hr>
         <h1><span class="temp" id="temp"></span>°C</h1>
         <img src="" alt="" class="icon" id="icon"><br>
         <h12><span class="weather_description" id="weather_description"></span><br></h12>
-        <h12>Feels like: <span class="feels_like" id="feels_like"></span>°F<br></h12>
-        <h12>Minimum temperature: <span class="min_temp" id="min_temp"></span>°F<br></h12> 
-        <h12>Maximum temperature: <span class="max_temp" id="max_temp"></span>°F<br></h12>
+        <h12>Feels like <span class="feels_like" id="feels_like"></span>°C<br></h12>
+      </div>
+      <div class="card1">
+        <h2 class="text-center">Humidity</h2>
+        <hr>
+        <h1><span class="humidity" id="humidity"></span>%</h1>
+        <h12><span class="weather_description" id="weather_description"></span><br></h12>
+        <h12>Min temperature is <span class="min_temp" id="min_temp"></span>°C<br></h12> 
+        <h12>Max temperature is <span class="max_temp" id="max_temp"></span>°C<br></h12>
+        <h12>Pressure is <span class="pressure" id="pressure"></span>mbar<br></h12> 
+      </div>
+      <div class="card1">
+        <h2 class="text-center">Wind</h2>
+        <hr>
+        <h1><span class="wind" id="wind"></span>m/s</h1><br>
+        <h12>Wind degree is <span class="degree" id="degree"></span><br></h12>
+        <h12>Sunrise time is <span class="sunrise" id="sunrise"></span><br></h12>
+        <h12>Sunset time is <span class="sunset" id="sunset"></span><br></h12>
       </div>
     </div>
     <div class="grid">  
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">New York</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <button class="btn btn-primary" onclick="getWeather('New york')">Go somewhere</button>
+          <h5 class="card-title">Chicago</h5>
+          <hr>
+          <h1><span class="card-text" id="temp1"></span>°C<br></h1>
+          <button class="btn btn-primary" onclick="getWeather('Chicago')">More Details</button>
         </div>
       </div>
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Hong Kong</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <h5 class="card-title">Shanghai</h5>
+          <hr>
+          <h1><span class="card-text" id="temp2"></span>°C<br></h1>
+          <button class="btn btn-primary" onclick="getWeather('Shanghai')">More Details</button>
         </div>
       </div>
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Tokyo</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <hr>
+          <h1><span class="card-text" id="temp3"></span>°C<br></h1>
+          <button class="btn btn-primary" onclick="getWeather('Tokyo')">More Details</button>
         </div>
       </div>
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Hong Kong</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <h5 class="card-title">Mumbai</h5>
+          <hr>
+          <h1><span class="card-text" id="temp4"></span>°C<br></h1>
+          <button class="btn btn-primary" onclick="getWeather('Mumbai')">More Details</button>
         </div>
       </div>
       </div>
